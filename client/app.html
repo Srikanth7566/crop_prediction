@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop prediction</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="img"></div>
+    <h1>CROP  PREDICTION</h1>
+    <form class="form">
+    <h2>State</h2>
+    <div>
+        <select class="state" name="" id="uistate">
+            <option value="" disabled="disabled" selected="selected">select</option>
+        </select>
+    </div>
+    <h2>Season</h2>
+    <div>
+        <select class="season" name="" id="uiseason">
+            <option value="" disabled="disabled" selected="selected">select</option>
+            <option>Autumn</option>
+            <option>Kharif</option>
+            <option>Rabi</option>
+            <option>Summer</option>
+            <option>Whole Year</option>
+            <option>Winter</option>
+        </select>
+    </div>
+    <h2>Soil</h2>
+    <div>
+        <select class="soil" name="" id="uisoil">
+            <option value="" disabled="disabled" selected="selected">select</option>
+            <option>ALL</option>
+            <option>Alluvial</option>
+            <option>Black</option>
+            <option>Clay</option>
+            <option>ClayLoamy</option>
+            <option>Coastalsandy</option>
+            <option>Gravel</option>
+            <option>Lateritic Loam</option>
+            <option>Lava</option>
+            <option>LightLoam</option>
+            <option>Loamtexture</option>
+            <option>Loamy</option>
+            <option>Notsandy</option>
+            <option>Peaty</option>
+            <option>Redclay</option>
+            <option>RedsandyLoam</option>
+            <option>Sandy</option>
+            <option>SandyLoamy</option>
+            <option>Sandyclay</option>
+            <option>Textured</option>
+        </select>
+    </div>
+        <h2>Rainfall</h2>
+        <input class="rainfall" type="email" id="uirainfall" class="floatlabel" name="avgrainfall" value="1500">
+    </form>
+    <button class="submit" onclick="onClickedPredictCrop()" type="button">Predict Crop</button>
+    <div id="uiPredictCrop" class="result"><h2></h2></div>
+</body>
+</html>
